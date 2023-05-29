@@ -1,6 +1,6 @@
 import { prisma } from "@/db";
 
-export const revalidate = 10;
+export const revalidate = 20;
 
 const Admin = async () => {
   const users = await prisma.user.findMany();
